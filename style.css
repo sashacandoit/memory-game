@@ -1,7 +1,46 @@
+body {
+  display: flex;
+  align-content: space-between;
+  background-color: #91D9A3;
+  font-family: Raleway, helvetica, sans-serif;
+}
+
+#game {
+  display: flex;
+  align-content: flex-start;
+  width: 100%;
+  height: 500px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
 #game div {
-  border: 1px solid black;
+  padding-top: 2px;
+  height: 30%;
   width: 15%;
-  height: 200px;
   margin: 10px;
-  display: inline-block;
+  background-color: #F2EEB6;
+  box-sizing: border-box;
+}
+
+h1 {
+  width: 300px;
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 60px;
+  color: #F2F2F2;
+  letter-spacing: 2px;
+}
+
+#counter {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+  margin-top: 20px;
+  font-size: 1em;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 10px;
 }
