@@ -1,4 +1,7 @@
 const gameContainer = document.getElementById("game");
+let card1 = 0;
+let card2 = 0;
+
 
 const COLORS = [
   "red",
@@ -36,11 +39,11 @@ function shuffle(array) {
   return array;
 }
 
-let shuffledColors = shuffle(COLORS);
-
 // this function loops over the array of colors
 // it creates a new div and gives it a class with the value of the color
 // it also adds an event listener for a click for each card
+
+let shuffledColors = shuffle(COLORS);
 function createDivsForColors(colorArray) {
   for (let color of colorArray) {
     // create a new div
@@ -57,11 +60,21 @@ function createDivsForColors(colorArray) {
   }
 }
 
-// TODO: Implement this function!
 function handleCardClick(event) {
-  // you can use event.target to see which element was clicked
   console.log("you just clicked", event.target);
+  let clickedCard = event.target;
+  clickedCard.style.backgroundColor = clickedCard.classList[0];
 }
 
 // when the DOM loads
 createDivsForColors(shuffledColors);
+
+
+
+//function to reload the page / reset game applied to reset button
+const resetButton = document.querySelector("#reset");
+function reset() {
+    reset = location.reload();
+}
+// Event listener for reset on click
+resetButton.addEventListener("click", reset);

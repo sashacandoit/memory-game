@@ -17,16 +17,28 @@ body {
 
 #game div {
   padding-top: 2px;
-  height: 30%;
+  height: 32%;
   width: 15%;
   margin: 10px;
   background-color: #F2EEB6;
   box-sizing: border-box;
+  transition: 300ms;
 }
 
+#game div:hover {
+  cursor: pointer;
+  background: url(div-box-hover-transparent.png) #F2EEB6;
+  background-position: center;
+  box-shadow: 8px 8px #618C70;
+  transform: translateX(-4px);
+}
+
+
 h1 {
-  width: 300px;
+  width: 290px;
   margin-top: 20px;
+  margin-bottom: 0;
+  height: 500px;
   padding-left: 10px;
   font-size: 60px;
   color: #F2F2F2;
@@ -36,11 +48,32 @@ h1 {
 #counter {
   text-align: center;
   vertical-align: middle;
-  line-height: 75px;
-  margin-top: 20px;
-  font-size: 1em;
-  width: 80px;
-  height: 80px;
+  line-height: 85px;
+  margin-top: 30px;
+  font-size: 75px;
+  width: 90px;
+  height: 90px;
+  background-color: #38A69B;
+  box-shadow: 8px 8px black;
+}
+
+ #reset {
+  color: #F2F2F2;
+  width: 90px;
+  height: 40px;
   background-color: black;
-  border-radius: 10px;
+  box-shadow: 8px 8px #38A69B;
+  border-radius: 0;
+  border-style: none;
+  transition: 200ms;
+ }
+
+ #reset:hover {
+   cursor: pointer;
+   background-color: #38A69B;
+   box-shadow: 10px 10px black;
+}
+
+#reset:active {
+  transform: translateY(3px);
 }
