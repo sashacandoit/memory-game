@@ -1,7 +1,7 @@
 body {
   display: flex;
   align-content: space-between;
-  background-color: #91D9A3;
+  background-color: #0C3B40;
   font-family: Inconsolata, 'Courier New', Courier, monospace;
 }
 
@@ -13,6 +13,7 @@ body {
   justify-content: flex-end;
   flex-wrap: wrap;
   margin-top: 20px;
+  padding-right: 20px;
 }
 
 #game div {
@@ -29,7 +30,7 @@ body {
   cursor: pointer;
   background: url(div-box-hover-transparent.png) #F2EEB6;
   background-position: center;
-  box-shadow: 8px 8px #618C70;
+  box-shadow: 8px 8px #F25E6B;
   transform: translateX(-4px);
 }
 
@@ -48,11 +49,11 @@ body {
 
 h1 {
   font-family: Squada One;
-  width: 290px;
+  width: 270px;
   margin-top: 20px;
   margin-bottom: 0;
   height: 500px;
-  padding-left: 10px;
+  padding-left: 25px;
   font-size: 70px;
   color: #F2F2F2;
   letter-spacing: 2px;
